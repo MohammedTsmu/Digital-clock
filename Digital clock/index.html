@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+    <meta name="description" content="Digital Clock by mohammed qasim using javascript programming language">
+    <link rel="shortcut icon" href="alarm clock.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container">
+        <div class="clock" id="clock">
+            <h1 id="h1">H:M:S</h1>
+            <p id="day">Day: </p>
+            <p id="month">Month: </p>
+            <p id="year">Year: </p>
+        </div>
+
+
+        <div class="admin" id="admin">
+            <div id="forms">
+                <form id="loginForm">
+                    <h2>Login to user dashboard</h2>
+                    <input type="text" id="userName" value="admin" placeholder="Username">
+                    <input type="password" id="password" value="admin" placeholder="Password">
+                    <button id="loginBtn">Unlock</button>
+                </form>
+
+                <form id="settingForm">
+                    <h2>Change settings</h2>
+                    <input type="number" id="setSec" placeholder="Seconds">
+                    <input type="number" id="setMin" placeholder="Minutes">
+                    <input type="number" id="setHours" placeholder="Hours">
+                    <input type="number" id="setDays" placeholder="Days">
+                    <input type="number" id="setMonths" placeholder="Months">
+                    <input type="number" id="setYears" placeholder="Years">
+                    <button id="settingBtn">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="spinnerContainer">
+            <div class="spinner" id="spinner"></div>
+            <div class="s1" id="">12</div>
+            <div class="s2" id="">3</div>
+            <div class="s3" id="">6</div>
+            <div class="s4" id="">9</div>
+        </div>
+
+        <button class="settings" id="settings">Settings</button>
+        <button class="start" id="start">Start</button>
+
+
+        <footer>
+            <p>Copyright &copy; made with &#10084; by Mohammed Qasim</p>
+        </footer>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
